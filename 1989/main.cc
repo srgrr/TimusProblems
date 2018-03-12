@@ -111,7 +111,7 @@ int main() {
       cin >> l >> r;
       ll h1 = (prefix.intsum(l, r) * fastpow(pow26mod[l - 1], mod - 2)) % mod;
       ll h2 = (suffix.intsum(n - r + 1, n - l + 1) * fastpow(pow26mod[n - r], mod - 2)) % mod;
-      cout << (h1 == h2 ? "Yes" : "No") << endl;
+      cout << (h1 == h2 ? "Yes" : "No") << "\n";
     }
   }
 
